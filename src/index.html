@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite Admin Panel</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body class="bg-secondary-subtle">
+    <!-- NAVBAR  -->
+    <nav class="navbar navbar-expand-lg bg-dark-subtle fixed-top border-black">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand fw-bold ">
+                <span class="pe-5 brand-logo">CREATOR Y</span>
+                <button class="btn btn-sm mobil" id="sideBtn">
+                    <i class="fa-solid fa-bars fw-bold fs-4 text-success-emphasis"></i>
+                </button>
+            </a>
+            <ul class="navbar-nav mobil">
+                <li class="nav-item">
+                    <form class="input-group">
+                        <div class="input-group-text">
+                            <i class="fa-solid fa-search"></i>
+                        </div>
+                        <input type="text" class="input-group-text form-control">
+                        <button class="btn btn-group-sm btn-primary">Search</button>
+                    </form>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item mobil">
+                    <a href="#" class="nav-link"><i class="fa-solid fa-circle-user fs-3 fw-bold pe-2"></i></a>
+                </li>
+                <li class="nav-item bg-light rounded">
+                    <a href="#" class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">UrName</a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li class="dropdown-item">
+                            <a href="#" class="text-decoration-none">
+                                <i class="fa-solid fa-user pe-2"></i>
+                                Porfile
+                            </a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#" class="text-decoration-none">
+                                <i class="fa-solid fa-right-from-bracket pe-2"></i>
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid" style="margin-top: 70px;">
+        <div class="row">
+            <div class="col-md-2" id="sidemain">
+                <!-- SIDE BAR -->
+                <div class="bg-body-tertiary p-2 d-flex flex-column justify-content-start align-items-start mb-5 side-bar">
+                    <a href="#" class="text-decoration-none mb-3 d-flex justify-content-start align-items-center active">
+                        <span class="d-inline-block circle-icon-bg">
+                            <i class="fas fa-home d-table-cell beauty-icon"></i>
+                        </span>
+                        <span class="ps-2 side-label" id="sideLabel1">Home</span>
+                    </a>
+                    <a href="#" class="text-decoration-none mb-3 d-flex justify-content-center align-items-center">
+                        <span class="d-inline-block circle-icon-bg">
+                            <i class="fas fa-home d-table-cell beauty-icon"></i>
+                        </span>
+                        <span class="ps-2 side-label" id="sideLabel2">About</span>
+                    </a>
+                    <a href="#" class="text-decoration-none mb-3 d-flex justify-content-center align-items-center">
+                        <span class="d-inline-block circle-icon-bg">
+                            <i class="fas fa-home d-table-cell beauty-icon"></i>
+                        </span>
+                        <span class="ps-2 side-label" id="sideLabel3">Contact Us</span>
+                    </a>
+                    <a href="#" class="text-decoration-none mb-3 d-flex justify-content-center align-items-center">
+                        <span class="d-inline-block circle-icon-bg">
+                            <i class="fas fa-home d-table-cell beauty-icon"></i>
+                        </span>
+                        <span class="ps-2 side-label" id="sideLabel4">Services</span>
+                    </a>
+                    <a href="#" class="text-decoration-none mb-3 d-flex justify-content-center align-items-center">
+                        <span class="d-inline-block circle-icon-bg">
+                            <i class="fas fa-home d-table-cell beauty-icon"></i>
+                        </span>
+                        <span class="ps-2 side-label" id="sideLabel5">Google Map</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-10" id="contentMain">
+                <div class="bg-light" id="content">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 500px;">
+                        <div class="">Admin Body Content</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark-subtle">
+        <h4 class="fw-bold text-center p-5 mt-5">
+            CREATOR Y
+        </h4>
+    </footer>
+</body>
+</html>
